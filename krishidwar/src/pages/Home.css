@@ -1,0 +1,30 @@
+.home-container {
+    background-image: url('C:\Users\pranj\OneDrive\Documents\GitHub\Farm-Gate\krishidwar\public\image1.jpg'); /* Replace with the correct path to your image */
+       /* Replace with the correct path to your image */
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the background image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Make text white */
+        text-align: center;
+        padding: 20px;
+        position: relative; /* Makes sure the container stays in the correct position */
+      }
+      
+      .home-title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .home-text {
+        font-size: 24px;
+        max-width: 600px;
+        margin-bottom: 4in;
+      }
+      

@@ -1,0 +1,65 @@
+/* Navbar.css */
+
+.navbar-custom {
+    background-color: #002432; /* Custom background color */
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: white !important; /* Make brand text white */
+  }
+  
+  .navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Align navbar options to the right */
+    width: 100%;
+  }
+  
+  .navbar-custom .nav-item {
+    position: relative; /* For positioning the hover bar */
+    margin-right: 20px; /* Add right margin to each nav item */
+  }
+  
+  .navbar-custom .nav-link {
+    color: white !important; /* Make text white */
+    padding: 14px 20px; /* Adjust padding for spacing */
+    position: relative; /* Required for the hover bar to be positioned correctly */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  /* Hover effect */
+  .navbar-custom .nav-link:hover {
+    color: #c8e8e9 !important; /* Light color on hover */
+  }
+  
+  /* Hover bar effect */
+  .navbar-custom .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #c8e8e9; /* Hover bar color */
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for bar width and position */
+  }
+  
+  /* Expand the bar on hover and when active */
+  .navbar-custom .nav-link:hover::after,
+  .navbar-custom .nav-link.active::after {
+    width: 100%; /* Expand the bar to full width */
+    left: 0; /* Ensure bar starts at the left edge of the nav item */
+  }
+  
+  /* Ensure the bar is centered */
+  .navbar-custom .nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-custom .nav-link.active::after {
+    background-color: #c8e8e9; /* Color for the active link */
+    width: 100%;
+    left: 0; /* Fixed position for the active link */
+  }
+  
